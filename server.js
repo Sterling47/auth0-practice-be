@@ -4,13 +4,7 @@ const app = express();
 app.set('port', process.env.PORT || 3001);
 app.use(express.json()); // Enable JSON body to be parsed
 
-let users = [
-  {
-		name: 'Silly Bird',
-		email: 'example@example.com',
-		avatarUrl: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/silly-bird-ernie-echols.jpg'
-	}
-]; // This is your fake database
+let users = []; // This is your fake database
 
 app.get('/', (request, response) => {
   response.status(200).json({hello: 'world'});
