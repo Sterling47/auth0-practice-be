@@ -10,6 +10,13 @@ app.get('/', (request, response) => {
   response.status(200).json({hello: 'world'});
 });
 
+// Your new endpoints (routes) can go here **************
+
+
+
+
+// ******************************************************
+
 app.listen(app.get('port'), () => {
   console.log(`Auth0 practice BE running on http://localhost:${app.get('port')}`);
 });
