@@ -1,8 +1,11 @@
 const express = require('express');
+var cors = require('cors');
 const app = express();
 
 app.set('port', process.env.PORT || 3001);
 app.use(express.json()); // Enable JSON body to be parsed
+
+app.use(cors()); // Allow all CORS requests
 
 let users = []; // This is your fake database
 
